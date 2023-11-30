@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Дмитрий  Дьяченко](https://up.htmlacademy.ru/adaptive/30/user/632523).
-* Наставник: `Неизвестно`.
+* Студент: [Дмитрий Дьяченко](https://up.htmlacademy.ru/adaptive/30/user/632523).
+* Наставник: [Александр Медведев](https://htmlacademy.ru/profile/exteep).
 
 ---
 
