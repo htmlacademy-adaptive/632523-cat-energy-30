@@ -5,23 +5,32 @@
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__icon-logo" href="#">
-        <img src="images/logo-mobile.svg" alt="Главный логотип Cat Energy." width="33" height="38">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
+          <img src="images/logo-mobile.svg" alt="Главный логотип Cat Energy." width="33" height="38">
+        </picture>
       </a>
       <a class="header__symbol-logo symbol-logo" href="#">
         <img src="images/symbol-logo.svg" alt="Логотип Cat Energy." width="101" height="18">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a href="#">Главная</a>
           </li>
-          <li class="main-nav__item  main-nav__item--current">
-            <a href="#">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a href="form.html">Подбор программы</a>
@@ -38,7 +47,11 @@
         <ul class="catalog__list">
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/chicken-pro.png" alt="Банка Cat Energy Pro со вкусом курицы 500 грамм." width="68" height="86">
+              <picture>
+                <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/chicken-pro-desktop@1x.png 1x, images/chicken-pro-desktop@2x.png 2x">
+                <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/chicken-pro-tablet@1x.png 1x, images/chicken-pro-tablet@2x.png 2x">
+                <img src="images/chicken-pro-mobile@1x.png" srcset="images/chicken-pro-mobile@2x.png 2x" alt="Банка Cat Energy Pro со вкусом курицы 500 грамм." width="68" height="86">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy PRO 500 г</h2>
@@ -61,7 +74,11 @@
           </li>
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/chicken-pro-big.png" alt="Банка Cat Energy Pro со вкусом курицы 1000 грамм." width="84" height="100">
+              <picture>
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/chicken-pro-big-desktop@1x.png 1x, images/chicken-pro-big-desktop@2x.png 2x">
+                <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/chicken-pro-big-tablet@1x.png 1x, images/chicken-pro-big-tablet@2x.png 2x">
+                <img src="images/chicken-pro-big-mobile@1x.png" srcset="images/chicken-pro-big-mobile@2x.png 2x" alt="Банка Cat Energy Pro со вкусом курицы 1000 грамм." width="84" height="100">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy PRO 1000 г</h2>
@@ -84,7 +101,11 @@
           </li>
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/fish-pro.png" alt="Банка Cat Energy Pro со вкусом рыбы 500 грамм." width="68" height="78">
+              <picture>
+                <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/fish-pro-desktop@1x.png 1x, images/fish-pro-desktop@2x.png 2x">
+                <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="images/fish-pro-tablet@1x.png 1x, images/fish-pro-tablet@2x.png 2x">
+                <img src="images/fish-pro-mobile@1x.png" srcset="images/fish-pro-mobile@2x.png 2x" alt="Банка Cat Energy Pro со вкусом рыбы 500 грамм." width="68" height="78">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy PRO 500 г</h2>
@@ -107,7 +128,11 @@
           </li>
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/fish-pro-big.png" alt="Банка Cat Energy Pro со вкусом рыбы 1000 грамм." width="84" height="100">
+              <picture>
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/fish-pro-big-desktop@1x.png 1x, images/fish-pro-big-desktop@2x.png 2x">
+                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/fish-pro-big-tablet@1x.png 1x, images/fish-pro-big-tablet@2x.png 2x">
+                <img src="images/fish-pro-big-mobile@1x.png" srcset="images/fish-pro-big-mobile@2x.png 2x" alt="Банка Cat Energy Pro со вкусом рыбы 100 грамм." width="84" height="100">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy PRO 1000 г</h2>
@@ -130,7 +155,11 @@
           </li>
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/buckwheat-slim.png" alt="Банка Cat Energy Slim со вкусом гречки 500 грамм." width="68" height="78">
+              <picture>
+                <source width="161" height="171" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-slim-desktop@1x.png 1x, images/buckwheat-slim-desktop@2x.png 2x">
+                <source width="161" height="171" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-slim-tablet@1x.png 1x, images/buckwheat-slim-tablet@2x.png 2x">
+                <img src="images/buckwheat-slim-mobile@1x.png" srcset="images/buckwheat-slim-mobile@2x.png 2x" alt="Банка Cat Energy Slim со вкусом гречки 500 грамм." width="68" height="78">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy SLIM 500 г</h2>
@@ -153,7 +182,11 @@
           </li>
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/buckwheat-slim-big.png" alt="Банка Cat Energy Slim со вкусом гречки 1000 грамм." width="84" height="100">
+              <picture>
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-slim-big-desktop@1x.png 1x, images/buckwheat-slim-big-desktop@2x.png 2x">
+                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-slim-big-tablet@1x.png 1x, images/buckwheat-slim-big-tablet@2x.png 2x">
+                <img src="images/buckwheat-slim-big-mobile@1x.png" srcset="images/buckwheat-slim-big-mobile@2x.png 2x" alt="Банка Cat Energy Slim со вкусом гречки 1000 грамм." width="84" height="100">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy SLIM 1000 г</h2>
@@ -176,7 +209,11 @@
           </li>
           <li class="catalog__item card">
             <a class="card__image-link" href="#">
-              <img src="images/rise-slim.png" alt="Банка Cat Energy Slim со вкусом риса 500 грамм." width="72" height="84">
+              <picture>
+                <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/rise-slim-desktop@1x.png 1x, images/rise-slim-desktop@2x.png 2x">
+                <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="images/rise-slim-tablet@1x.png 1x, images/rise-slim-tablet@2x.png 2x">
+                <img src="images/rise-slim-mobile@1x.png" srcset="images/rise-slim-mobile@2x.png 2x" alt="Банка Cat Energy Slim со вкусом риса 500 грамм." width="72" height="84">
+              </picture>
             </a>
             <a class="card__title-link" href="#">
               <h2 class="card__title">Cat Energy SLIM 500 г</h2>
@@ -261,7 +298,11 @@
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
         </div>
-        <img class="contacts__map" src="images/map.png" alt="Наше адрес на карте" width="320" height="362">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Наше адрес на карте" width="320" height="362">
+        </picture>
       </section>
       <div class="footer__links links">
         <a class="links__logo symbol-logo" href="#">
