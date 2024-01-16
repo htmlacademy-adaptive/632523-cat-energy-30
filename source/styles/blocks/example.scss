@@ -1,0 +1,45 @@
+.example {
+  padding: 20px 0 40px;
+  background-color: $bg-secondary-color;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  @include list-reset;
+}
+
+.example__stats {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.example__stats-value {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $base-color-text;
+}
+
+.example__costs {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
