@@ -1,0 +1,28 @@
+.hero__wrapper {
+  padding-top: 27px;
+  background-color: $bg-base-color;
+  background-image: url(../../images/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero__slogan {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}

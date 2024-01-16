@@ -26,14 +26,14 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a href="#">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--current" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -60,19 +60,19 @@
             <input class="data__input" type="number" name="cat-age" id="cat-age" placeholder="7">
           </p>
         </fieldset>
-        <fieldset class="form__fieldset program">
+        <fieldset class="form__fieldset options">
           <legend class="visually-hidden">Выбор программы питания</legend>
-          <p class="program__row">
-            <input class="program__input" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
-            <label class="program__label" for="weight-loss">Похудение</label>
+          <p class="options__row">
+            <input class="options__input" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
+            <label class="options__label" for="weight-loss">Похудение</label>
           </p>
-          <p class="program__row">
-            <input class="program__input" type="radio" name="program" id="weight-add" value="weight-add">
-            <label class="program__label" for="weight-add">Набор массы</label>
+          <p class="options__row">
+            <input class="options__input" type="radio" name="program" id="weight-add" value="weight-add">
+            <label class="options__label" for="weight-add">Набор массы</label>
           </p>
-          <p class="program__row">
-            <input class="program__input" type="radio" name="program" id="advice" value="advice">
-            <label class="program__label" for="advice">Не знаю (Нужен ваш совет)</label>
+          <p class="options__row">
+            <input class="options__input" type="radio" name="program" id="advice" value="advice">
+            <label class="options__label" for="advice">Не знаю (Нужен ваш совет)</label>
           </p>
         </fieldset>
         <fieldset class="form__fieldset form-contacts">
@@ -119,7 +119,7 @@
           </p>
         </fieldset>
         <div class="submit">
-          <button class="submit__button" type="submit">Отправить заявку</button>
+          <button class="submit__button button" type="submit">Отправить заявку</button>
           <small class="submit__note">* — Обязательные поля</small>
         </div>
       </form>
@@ -127,7 +127,7 @@
     <footer class="page__footer footer">
       <section class="footer__contacts contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--inner">
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
         </div>
@@ -139,7 +139,7 @@
       </section>
       <div class="footer__links links">
         <a class="links__logo symbol-logo" href="#">
-          <img src="images/symbol-logo.svg" alt="Логотип Cat Energy." width="101" height="18">
+          <img class="links__logo-image" src="images/symbol-logo.svg" alt="Логотип Cat Energy." width="101" height="18">
         </a>
         <ul class="links__list social">
           <li class="social__item">

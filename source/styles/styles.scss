@@ -1,7 +1,31 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/common.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/program.scss";
+@import "./blocks/features.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/links.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/all-products.scss";
+@import "./blocks/add-products.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/data.scss";
+@import "./blocks/options.scss";
+@import "./blocks/form-contacts.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/adding.scss";
+@import "./blocks/submit.scss";

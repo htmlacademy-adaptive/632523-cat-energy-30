@@ -1,0 +1,17 @@
+.gift {
+  display: block;
+  padding: 187px 0 43px;
+  background-image: url("../../images/present-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bg-base-color;
+}
+
+.gift__text {
+  margin: 0 auto;
+  width: 161px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
