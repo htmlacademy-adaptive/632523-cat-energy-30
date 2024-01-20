@@ -1,3 +1,13 @@
 .header {
   background-color: #ffffff;
 }
+
+.header__icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

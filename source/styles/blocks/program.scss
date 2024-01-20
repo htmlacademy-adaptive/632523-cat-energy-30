@@ -3,9 +3,51 @@
 }
 
 .program__item {
+  position: relative;
   padding: 30px 33px 18px 20px;
   margin-bottom: 20px;
   background-color: $bg-secondary-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 46px;
+    width: 50px;
+    height: 50px;
+    background-color: $bg-base-color;
+    border-radius: 50%;
+  }
+
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 55px;
+      width: 36px;
+      height: 50px;
+      mask-image: url("../../images/icons/stack.svg#cat-slim-icon");
+      mask-repeat: no-repeat;
+      background-color: #000000;
+      z-index: 1;
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 36px;
+      width: 67px;
+      height: 28px;
+      mask-image: url("../../images/icons/stack.svg#cat-pro-icon");
+      mask-repeat: no-repeat;
+      background-color: #000000;
+      z-index: 1;
+    }
+  }
 }
 
 .program__title {
@@ -27,12 +69,25 @@
 }
 
 .program__link {
+  position: relative;
   display: block;
   padding-top: 19px;
+  width: 140px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 32px;
+    height: 10px;
+    mask-image: url("../../images/icons/stack.svg#arrow-icon");
+    background-color: #000000;
+  }
 }
