@@ -18,9 +18,57 @@
 }
 
 .features__item {
+  position: relative;
   margin-bottom: 26px;
+
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-base-color;
+  }
+
+  &--eco {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#leaf-icon");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px 32px;
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#powder-icon");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 26px 29px;
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#eat-icon");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25px 30px;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../../images/icons/stack.svg#clock-icon");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 26px 31px;
+    }
   }
 }
 
