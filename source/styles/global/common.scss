@@ -11,11 +11,47 @@ img {
   object-fit: contain;
 }
 
-body {
+.page__body {
+  position: relative;
   margin: 0;
-	padding: 0;
+  padding: 0;
+  min-width: 320px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--index {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        width: 50%;
+        height: 694px;
+        background-color: $bg-base-color;
+        background-image: url("../../images/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 50%;
+        height: 694px;
+        background-color: rgba(104, 183, 56, 0.85);
+      }
+    }
+  }
 }

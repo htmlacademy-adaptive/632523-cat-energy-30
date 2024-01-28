@@ -1,5 +1,46 @@
 .header {
+  position: relative;
+  padding: 0 20px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0;
+    background-color: transparent;
+  }
+}
+
+.header__icon-link {
+  display: block;
+  padding: 13px 0 10px;
+  width: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+.header__symbol-logo {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__icon {

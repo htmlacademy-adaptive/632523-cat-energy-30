@@ -13,7 +13,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header container">
       <a class="header__icon-link" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
@@ -26,22 +26,22 @@
           <use href="/images/icons/stack.svg#sign-logo-icon"></use>
         </svg>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-      <button class="header__button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
     </header>
     <main>
       <section class="catalog">
@@ -273,49 +273,59 @@
       </section>
       <section class="add-products">
         <h2 class="add-products__heading">Дополнительные товары</h2>
-        <ul class="add-products__list">
-          <li class="add-products__item">
-            <h3 class="add-products__title">Сахарозаменитель</h3>
-            <table class="add-products__table">
-              <tr class="add-products__row">
-                <td class="add-products__option">1 упаковка (100 г)</td>
-                <td class="add-products__price">200 ₽</td>
-              </tr>
-            </table>
-            <a class="add-products__link button" href="#">Заказать</a>
-          </li>
-          <li class="add-products__item">
-            <h3 class="add-products__title">Питьевая вода</h3>
-            <table class="add-products__table">
-              <tr class="add-products__row">
-                <td class="add-products__option">5 литров</td>
-                <td class="add-products__price">50 ₽</td>
-              </tr>
-            </table>
-            <a class="add-products__link button" href="#">Заказать</a>
-          </li>
-          <li class="add-products__item">
-            <h3 class="add-products__title">Молоко</h3>
-            <table class="add-products__table">
-              <tr class="add-products__row">
-                <td class="add-products__option">1 литр</td>
-                <td class="add-products__price">100 ₽</td>
-              </tr>
-            </table>
-            <a class="add-products__link button" href="#">Заказать</a>
-          </li>
-          <li class="add-products__item">
-            <h3 class="add-products__title">Витамины</h3>
-            <table class="add-products__table">
-              <tr class="add-products__row">
-                <td class="add-products__option">1 упаковка (30 г)</td>
-                <td class="add-products__price">300 ₽</td>
-              </tr>
-            </table>
-            <a class="add-products__link button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <a class="add-products__gift gift">
+        <div class="add-products__wrapper">
+          <ul class="add-products__list container">
+            <li class="add-products__item">
+              <div class="add-products__info-wrapper">
+                <h3 class="add-products__title">Сахарозаменитель</h3>
+                <table class="add-products__table">
+                  <tr class="add-products__row">
+                    <td class="add-products__option">1 упаковка (100 г)</td>
+                    <td class="add-products__price">200 ₽</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="add-products__link button" href="#">Заказать</a>
+            </li>
+            <li class="add-products__item">
+              <div class="add-products__info-wrapper">
+                <h3 class="add-products__title">Питьевая вода</h3>
+                <table class="add-products__table">
+                  <tr class="add-products__row">
+                    <td class="add-products__option">5 литров</td>
+                    <td class="add-products__price">50 ₽</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="add-products__link button" href="#">Заказать</a>
+            </li>
+            <li class="add-products__item">
+              <div class="add-products__info-wrapper">
+                <h3 class="add-products__title">Молоко</h3>
+                <table class="add-products__table">
+                  <tr class="add-products__row">
+                    <td class="add-products__option">1 литр</td>
+                    <td class="add-products__price">100 ₽</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="add-products__link button" href="#">Заказать</a>
+            </li>
+            <li class="add-products__item">
+              <div class="add-products__info-wrapper">
+                <h3 class="add-products__title">Витамины</h3>
+                <table class="add-products__table">
+                  <tr class="add-products__row">
+                    <td class="add-products__option">1 упаковка (30 г)</td>
+                    <td class="add-products__price">300 ₽</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="add-products__link button" href="#">Заказать</a>
+            </li>
+          </ul>
+        </div>
+        <a class="add-products__gift gift container">
           <h3 class="visually-hidden">Эксклюзивное предложение</h3>
           <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
         </a>
@@ -325,8 +335,10 @@
       <section class="footer__contacts contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+          <div class="contacts__info-wrapper">
+            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+          </div>
         </div>
         <picture>
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
@@ -335,41 +347,44 @@
         </picture>
       </section>
       <div class="footer__links links">
-        <a class="links__logo symbol-logo" href="#">
-          <svg class="symbol-logo__icon symbol-logo__icon--footer" width="128" height="24">
-            <use href="/images/icons/stack.svg#sign-logo-icon"></use>
-          </svg>
-        </a>
-        <ul class="links__list social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="28" height="22">
-                <use href="/images/icons/stack.svg#vk-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="28" height="22">
-                <use href="/images/icons/stack.svg#youtube-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="28" height="22">
-                <use href="/images/icons/stack.svg#telegram-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a class="links__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__sign">HTML Academy</span>
-          <svg class="copyright__logo" width="27" height="34">
-            <use href="/images/icons/stack.svg#html-academy-icon"></use>
-          </svg>
-        </a>
+        <div class="links__wrapper">
+          <a class="links__logo symbol-logo" href="#">
+            <svg class="symbol-logo__icon symbol-logo__icon--footer" width="128" height="24">
+              <use href="/images/icons/stack.svg#sign-logo-icon"></use>
+            </svg>
+          </a>
+          <ul class="links__list social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="28" height="22">
+                  <use href="/images/icons/stack.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="28" height="22">
+                  <use href="/images/icons/stack.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon" width="28" height="22">
+                  <use href="/images/icons/stack.svg#telegram-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="links__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__sign">HTML Academy</span>
+            <svg class="copyright__logo" width="27" height="34">
+              <use href="/images/icons/stack.svg#html-academy-icon"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
+    <script src="../build/scripts/index.js"></script>
   </body>
 </html>

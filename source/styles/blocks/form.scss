@@ -1,0 +1,10 @@
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 1220px;
+  }
+}

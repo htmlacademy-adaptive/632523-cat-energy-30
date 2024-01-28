@@ -1,10 +1,32 @@
 .links {
-  padding: 40px 20px;
   background-color: $bg-secondary-color;
+}
+
+.links__wrapper {
+  padding: 40px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 68px 0;
+    width: 1220px;
+  }
 }
 
 .links__logo {
   display: block;
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }

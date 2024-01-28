@@ -1,11 +1,27 @@
 .submit {
   padding: 0 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 0 40px;
+    width: 92%;
+  }
 }
 
 .submit__button {
   margin-bottom: 21px;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+    margin-bottom: 0;
+    width: 40%;
+  }
 }
 
 .submit__note {

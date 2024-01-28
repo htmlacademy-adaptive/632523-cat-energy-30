@@ -1,17 +1,49 @@
 .options {
   margin: 0;
-  padding: 22px 0 19px;
+  padding: 22px 20px 19px;
   border: none;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    width: 628px;
+    border: 1px solid #e7e7e7;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      width: 570px;
+    }
+  }
+}
+
+.options__wrapper {
+  margin: 0;
 }
 
 .options__row {
   margin: 0;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.options__input {
+  display: none;
 }
 
 .options__label {
+  padding-left: 45px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

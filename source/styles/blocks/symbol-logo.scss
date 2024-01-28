@@ -1,14 +1,17 @@
 .symbol-logo {
-  display: block;
-
   &--footer {
+    display: block;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 34px;
   }
 }
 
 .symbol-logo__icon {
   display: block;
-  fill: aquamarine;
+  fill: #68b738;
 
   &--footer {
     margin: 0 auto;

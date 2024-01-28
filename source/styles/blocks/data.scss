@@ -1,30 +1,57 @@
 .data {
   margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
+  padding: 0 20px;
+  padding-bottom: 24px;
   border: none;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    width: 570px;
+  }
 }
 
 .data__row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .data__label {
   margin-right: 13px;
-  width: auto;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .data__input {
   flex-grow: 1;
+  width: 60%;
   padding: 14px 15px 13px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $base-color-text;
+  text-transform: uppercase;
   border: 1px solid #e7e7e7;
 
   &::placeholder {
@@ -33,5 +60,15 @@
     line-height: 18px;
     color: $base-color-text;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
