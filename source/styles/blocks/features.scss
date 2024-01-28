@@ -1,5 +1,9 @@
 .features {
-  padding-bottom: 49px;
+  padding-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .features__title {
@@ -10,11 +14,35 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    padding-top: 15px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+  }
 }
 
 .features__list {
   @include list-reset;
+  margin: 0 auto;
+  max-width: 400px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 11px 60px;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(250px, 4);
+    gap: 0 80px;
+  }
 }
 
 .features__item {
@@ -28,11 +56,36 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 60px;
     height: 60px;
     background-color: $bg-base-color;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 76px;
+    z-index: -1;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $bg-secondary-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 2px;
+      right: 0;
+    }
   }
 
   &--eco {
@@ -41,6 +94,13 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30px 32px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "1";
+        right: 15px;
+      }
     }
   }
 
@@ -51,6 +111,12 @@
       background-position: center;
       background-size: 26px 29px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "2";
+      }
+    }
   }
 
   &--eat {
@@ -59,6 +125,12 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 25px 30px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "3";
+      }
     }
   }
 
@@ -69,11 +141,34 @@
       background-position: center;
       background-size: 26px 31px;
     }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "4";
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 0 57px 0;
   }
 }
 
 .features__text {
   margin: 0;
-  padding-left: 80px;
-  width: 300px;
+  margin-left: auto;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    width: 245px;
+  }
+}
+
+.features__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

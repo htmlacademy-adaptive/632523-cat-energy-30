@@ -1,20 +1,15 @@
 .all-products {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: -1px;
   padding: 78px 20px 25px;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    width: 30px;
-    height: 30px;
-    mask-image: url("../../images/icons/stack.svg#plus-icon");
-    background-color: #d3d3d3;
-    transform: translateX(-50%);
+  @media (min-width: $tablet-width) {
+    padding: 160px 37px 40px;
+    border: 2px solid $bg-secondary-color;
   }
 }
 
@@ -28,6 +23,14 @@
   color: #111111;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 170px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .all-products__text {
@@ -35,10 +38,21 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .all-products__link {
   margin-top: 21px;
   color: $base-color-text;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
